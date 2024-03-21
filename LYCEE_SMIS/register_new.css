@@ -1,0 +1,25 @@
+input[type=submit]{
+    border-radius: 5px; 
+    background: rgb(237, 123, 70);
+    color: white;
+    font: 20px  arial black,sans-serif;
+    border: none;
+    box-sizing: border-box;
+}
+input,select{
+    width: 30%;
+    padding: 7px;
+    color: black;
+    box-sizing: border-box;
+}
+.select-option{
+    padding: 5px;
+}
+.select-option:hover{
+    background-color: rgb(237, 123, 70);
+
+}
+h3{
+    font: 40px arial black,sans-serif;
+    color: rgb(237, 123, 70);
+}

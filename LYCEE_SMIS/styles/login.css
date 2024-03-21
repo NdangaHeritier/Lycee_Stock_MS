@@ -1,0 +1,37 @@
+body{
+    background: rgb(2, 56, 57); 
+    color: indianred;
+}
+input{
+    padding: 5px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    line-height: 30px;
+}
+.paragraph{
+    color:#26f7fd;
+    font-weight: 1000;
+    font-family: 'poppins',sans-serif;
+    font-size: 60px;
+}
+.form{
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    padding: 50px;
+}
+label{
+    color: white;
+}
+.submit-btn{
+    background-color:rgba(0, 120, 120, 1.0);
+    line-height: 30px;
+}
+.submit-btn:hover{
+    cursor: pointer;
+}

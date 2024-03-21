@@ -1,0 +1,48 @@
+.table-css{
+    color: rgb(10, 6, 5);
+    padding: 10px; 
+    width: 600px;
+    border-collapse: collape;
+    background-color: rgb(237, 123, 70);
+}
+.tabel-row{
+    padding: 20px; 
+    margin: 10px;
+    line-height: 30px;
+    font-size: 20px;
+      
+}
+.container-table{   
+    width: 800px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* margin-bottom: 10px; */
+    padding-bottom: 20px;
+    margin-left: 250px;
+}
+.tabel-row-products{
+    align-items: center;    
+}
+
+
+.print-btn{
+    margin-left: 970px;
+    border: none;
+    margin-top: 15px;
+}
+
+@media print{
+    .print-btn, img{
+        display: none;
+    }
+}
+
+.print-btn:hover{
+    cursor: pointer;
+}
+.img{
+    border: transparent;
+    outline: transparent;
+	width: 40px;
+    margin-right:20% ;
+}

@@ -1,0 +1,105 @@
+.message{
+    padding: 1rem;
+    background-color: rgba(237, 123, 71, 0.8);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    box-shadow: 0px 0px 5px -1px black;
+    color: antiquewhite;
+    font: 18px arial black,sans serif;
+    border-radius: 2px;
+}
+.message .close{
+    color: rgb(237, 123, 70);
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin-bottom: 3px;
+    width: 25px;
+    text-decoration: none;
+}
+.message .contes{
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+input[type=submit]{
+    border-radius: 5px; 
+    background: rgb(237, 123, 70);
+    color: white;
+    font: 20px  arial black,sans-serif;
+    border: none;
+    box-sizing: border-box;
+    height: 60px;
+}
+input,select{
+    width: 30%;
+    padding: 7px;
+    color: black;
+    box-sizing: border-box;
+}
+.insert-product{
+    width: 30%;
+    padding: 17px;
+    color: darkgreen;
+    border: 2px solid rgb(237, 123, 70);
+    outline-color: rgb(237, 123, 70);
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+h3{
+    font: 33px arial black,sans-serif;
+    color: rgb(237, 123, 70);
+    background-color: rgba(105, 50, 0, 0.1);
+    padding: 1rem;
+    margin-top: 0px;
+    border-bottom: 5px solid rgb(237, 123, 70);
+}
+.select{
+    width: 30%;
+    padding: 17px;
+    color: darkgreen;
+    border: 2px solid rgb(237, 123, 70);
+    outline-color: rgb(237, 123, 70);
+    border-radius: 5px;
+    width: 300px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.submit{
+    background-color: rgba(237, 123, 70, 1.0);
+    color: white;
+    font: 20px arial black,sans-serif;
+    width: 300px;
+    line-height: 40px;
+}
+.submit:hover{
+    cursor: pointer;
+}
+
+form{
+    background-color: rgba(50, 10, 0, 0.1);
+    width: 650px;
+    padding-bottom: 1rem;
+    height: 60%;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+.container-item-img{
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+}
+.container-item{
+    width: 70%;
+}

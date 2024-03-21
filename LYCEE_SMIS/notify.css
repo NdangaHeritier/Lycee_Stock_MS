@@ -1,0 +1,37 @@
+.header{
+    background-color: rgba(237, 123, 70, 1.0);
+    display: flex;
+}
+.header .icons{
+    background-color: white;
+}
+.header .icons img{
+   /* margin-right: 1rem;*/
+}
+.header .title{
+    font: 18px arial black,sans-serif;
+    color: white;padding: 1rem;
+}
+*{
+    font-family: sans-serif;
+}
+.noti{
+    background-color: rgba(200, 100, 20, 0.2);
+    padding: 10px;
+    margin-bottom: 3px;
+    display: flex;
+    color: rgb(61, 61, 61);
+}
+.noti .con{
+    padding-left: 1rem;
+}
+.noti img{margin-right: 1rem;}
+body{
+    background-color: rgba(215, 200, 180, 1.0)
+}
+.contents{
+    height: 360px;
+    border-radius: 3px;
+    overflow: auto;
+    background-color: white;
+}

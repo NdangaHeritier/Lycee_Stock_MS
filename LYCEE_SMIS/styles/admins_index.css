@@ -1,0 +1,91 @@
+.right-pannel{
+    width: 81%;
+}
+header{
+    background-color: rgb(231, 229, 227);
+    padding: 5px;
+    border-radius: 0px 5px 0px 0px;
+    border: 1px solid silver;
+    text-align: center;
+}
+header .profiles .prof{
+     margin-left: 80%;
+}
+header .profiles img{
+    margin-top: 5px;
+    text-align: left;
+    height: 30px;
+    width: 30px;
+}
+header .profiles a{
+    color: grey;
+    text-decoration: none;
+    font: 10px arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.logo{
+    background-color: white;
+    padding-top: 1rem;
+    text-align: center;
+}
+.logo .school-details{
+     padding: 1rem;
+    font: 12px arial,sans-serif;
+    color: grey;
+    background-color: rgb(56, 28, 12);
+}
+.logo .school-details .school-name{
+    padding: 1rem;
+    /* padding-left: 1rem; */
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(237,123,70);
+}
+body{
+    margin: 0px;
+}
+.main{
+    display: flex;
+    margin: 2px;
+}
+iframe{
+    width: 100%;
+    border: none;
+    height: 570px;
+}
+.left-pannel{
+    width: 19%;
+    background-color:  rgb(240, 248, 245);
+    border-radius: 5px 0px 0px 0px;
+    border: 1px solid silver;
+    height: 635px;
+    overflow: auto;
+}
+.links{
+    margin-top: 5px;
+    background-color: rgb(222, 223, 223);
+    border-top: 0.5px solid silver;
+}
+.links a{
+    color: rgb(53, 52, 52);
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+.links .bars{
+    margin: 1rem;
+}
+.a{
+    padding: 7px;
+    border-bottom: 0.5px solid silver;
+    padding-left: 1rem;
+}
+.a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+a:focus{
+    color: rgb(237, 123, 70);
+    text-decoration: underline;
+    font-weight: bold;
+}

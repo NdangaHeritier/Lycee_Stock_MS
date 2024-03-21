@@ -1,0 +1,160 @@
+.main{
+    border: 0.5px solid silver;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba(219, 219, 219, 0.952);
+    font-family: sans-serif;
+}
+.head{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head img{
+    padding: 5px;
+    margin-right: 2rem;
+}
+.title{
+    font: arial black,sans-serif;
+    color: rgb(73, 44, 15);
+    font-weight: bold;
+}
+.head img:hover{
+    background-color: rgba(56, 28, 12, 0.8);
+}
+.boxes{
+    display: block;
+    border-top: 1px solid silver;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+.part{
+    border: 0.1px solid silver;
+    margin-bottom: 5px;
+    background-color: rgba(219, 219, 219, 0.952);
+    border-radius: 5px;
+    height: 400px;
+    overflow: auto;
+}
+.part .banner{
+    border-radius: 5px 5px 0px 0px;
+    padding: 15px;
+    font-size: 14px;
+    background-color: rgb(56, 28, 12);
+    color: white;
+    font-family: arial black,sans-serif;
+    display: flex;
+}
+.padd{
+    padding: 10px;
+}
+.part .banner img{
+    margin-right: 2rem;
+}
+.part .detail{
+    font-family: sans-serif;
+    padding: 2rem;
+    color: rgb(56, 28, 12);
+}
+.list{
+    border-top: 1px solid silver;
+    padding: 1rem;
+    background-color: aliceblue;
+}
+.li{
+    width: 98%;
+    display: flex;
+    background-color: rgba(236, 233, 231, 0.8);
+    border-left: 0.5px solid silver;
+    border-right: 0.5px solid silver;
+    border-bottom: 0.5px solid silver;
+    padding: 10px;
+}
+.top{
+    border-top: 0.5px solid silver;
+}
+.bottom{
+    border-radius: 0px 0px 5px 5px;
+}
+.li img{
+    padding: 6px
+}
+.li .li-detail{
+    padding: 6px;
+    background-color:transparent;
+    width: 100%;
+    border-left: 0.5px solid silver;
+    padding-left: 1rem;
+}
+.li .li-detail a{
+    color: rgb(112, 110, 108);
+    font-size: 15px;
+    text-decoration: none;
+}
+.li .li-detail a:hover{
+    color: rgb(73, 44, 15);
+    /* font-weight: bold; */
+}
+.li a{
+    color: rgb(237,123,70);
+    margin-left: 4rem;
+    padding: 5px;
+    border: 0.5px solid silver;
+    border-radius: 5px;
+    width: 50px;
+    text-align: center;
+}
+.li a:hover{
+    background-color: silver;
+}
+.form{
+    background-color: rgba(255, 255, 255, 0.752);
+    border: 0.5px solid silver;
+    border-radius: 5px;
+    padding: 0px 5px 0px 5px;
+}
+.form .input-field{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.034);
+    padding: 10px 10px 10px 25px;
+    border-bottom: 0.5px solid silver;
+}
+.form .input-field input, .form .input-field select{
+    border: 0.5px solid silver;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    color: rgb(70, 69, 69);
+    outline-color: silver;
+    background-color: rgb(238, 236, 235);
+    font-family: monospace;
+    width: 800px;
+    box-sizing: border-box;
+}
+.form .input-field button{
+    background-color: rgb(236, 235, 234);
+    color: aliceblue;
+    border: 0.5px solid silver;
+    border-radius: 0px 5px 5px 0px;
+}
+.form .input-field input:focus{
+    background-color: rgb(201, 195, 191);
+    border-radius: 5px 0px 0px 5px;
+}
+.search-results{
+    padding: 16px;
+    color: rgb(121, 120, 120);
+}
+.search-results i{
+    margin: 1rem;
+    font: 15px monospace;
+    color: rgb(73, 44, 15);
+}
+.search-results .details{
+    padding: 1rem;
+    border: 0.5px solid silver;
+    border-radius: 5px;
+}
+.search-results .details .fullname{
+    font: 28px arial black, sans-serif;
+    color: rgb(73, 44, 15);
+    margin-bottom: 2rem;
+}

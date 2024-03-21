@@ -1,0 +1,72 @@
+.message{
+    padding: 1rem;
+    background-color: rgba(237, 123, 71, 0.8);
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    box-shadow: 0px 0px 5px -1px black;
+    color: antiquewhite;
+    font: 18px arial black,sans serif;
+    border-radius: 2px;
+}
+.message .close{
+    color: rgb(237, 123, 70);
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin-bottom: 3px;
+    width: 25px;
+    text-decoration: none;
+}
+.message .contes{
+    padding: 1rem;
+    margin-right: 2rem;
+}
+
+body{
+    background: rgba(255, 255, 255, 0.8);
+    margin: 0px;
+}
+input{
+    width: 30%;
+    padding: 17px;
+    color: darkgreen;
+    border: 2px solid rgb(237, 123, 70);
+    outline-color: rgb(237, 123, 70);
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    background-color: rgba(237, 123, 70, 1.0);
+    color: white;
+    font: 18px arial black,sans-serif;
+}
+input[type=submit]:hover{
+    cursor: pointer;
+}
+h3{
+    font: 33px arial black,sans-serif;
+    color: rgb(237, 123, 70);
+    background-color: rgba(105, 50, 0, 0.1);
+    padding: 1rem;
+    margin-top: 0px;
+    border-bottom: 5px solid rgb(237, 123, 70);
+}
+form{
+    background-color: rgba(50, 10, 0, 0.1);
+    width: 60%;
+    padding-bottom: 1rem;
+    height: 410px;
+    border-radius: 10px;
+}
+.mai{
+    display: flex;
+}
+.details{
+    width: 40%;
+    padding: 2rem;
+}
