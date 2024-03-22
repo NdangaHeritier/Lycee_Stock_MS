@@ -5,6 +5,15 @@
     background-color: rgba(219, 219, 219, 0.952);
     font-family: sans-serif;
 }
+.color{
+    color: grey;
+}
+.color2{
+    color: rgb(100, 100, 100);
+}
+.color3{
+    color: rgb(237, 123, 70);
+}
 .head{
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -42,8 +51,8 @@
     margin-right: 2rem;
 }
 .part .detail{
-    font: 50px arial black,sans-serif;
-    padding: 2rem;
+    font: 60px arial black,sans-serif;
+    padding: 4rem;
     color: rgb(56, 28, 12);
 }
 .list{
@@ -54,7 +63,7 @@
 .li{
     width: 98%;
     display: flex;
-    background-color: rgba(236, 233, 231, 0.8);
+    background-color: rgba(240, 240, 240, 0.8);
     border-left: 0.5px solid silver;
     border-right: 0.5px solid silver;
     border-bottom: 0.5px solid silver;
@@ -94,8 +103,67 @@
     margin-left: 4rem;
     padding: 5px;
 }
+.padd-left{
+    padding-left: 1rem;
+}
+.padd-right{
+    padding-right: 1rem;
+}
+.w2{
+    width: 200px;
+}
+.small{
+    font-size: 12px;
+}
+.medium{
+    font-size: 14px;
+}
 .cl{
     padding-top: 10px;
     padding-left: 6rem;
     color: rgb(207, 103, 50);
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-color: silver;
+    border-radius: 3px;
+}
+table td, table th{
+    padding: 5px;
+}
+table thead{
+    background-color: rgb(219, 218, 218);
+}
+.print-btn{
+    background-color: rgb(73, 44, 15);
+    color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+    border: 0.5px solid silver;
+    margin-left: 40rem;
+}
+.foot{
+    display: none;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-top: 1px solid silver;
+}
+@media print{
+    .no{display: none;}
+    *{color: rgb(80, 79, 79);}
+    .foot{
+        display: block;
+    }
+    .main{
+        border: none;
+    }
+}
+.font2{
+    font: 35px arial black,sans-serif;
+    padding-top: 2rem;
+}
+.font1{
+    font: 25px arial black,sans-serif;
+    padding-top: 1rem;
 }

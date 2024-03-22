@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include '../connection.php';
+$cur_year=date('Y');
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +19,7 @@ include '../connection.php';
 	</div>
     <div class="boxes">
         <div class="part">
-            <div class="banner">
+            <div class="banner no">
                 <img src="../images/hehe.png" width="20" height="30">
                 <a>Search Student's Information</a>
             </div>
@@ -43,7 +44,6 @@ include '../connection.php';
                                 $class=$fetch_query['class_ID'];
                                 $qry2=mysqli_query($con,"select classes.*, teachers.* from classes, teachers where classes.ClassTeacher=teachers.teacher_ID and classes.class_ID='$class'");
                                 $fetch_query2=mysqli_fetch_array($qry2);
-                                $cur_year=date('Y');
                                 ?>
                                 <div class="details padd">
                                     <div class="fullname">
@@ -53,14 +53,10 @@ include '../connection.php';
                                     <div class="other padd">
                                         <p><b>Class: </b>S<?php echo $fetch_query2['ClassName']; ?></p>
                                         <p><b>Class Teacher: </b><?php echo $fetch_query2['FullName']; ?></p>
-                                        <p>
                                         <p><b>Sex: </b><?php echo $fetch_query['Sex']; ?></p>
+                                        <p>
                                            <b>Age: </b><?php  echo intval($cur_year)-intval($fetch_query['year']); ?>
                                         </p>
-                                    </div>
-                                    <div class="go li top">
-                                        <a href="edit-student-info.php?tid=<?php echo $fetch_query['student_ID'];?>">edit</a>
-                                        <a href="delete-student-info.php?tid=<?php echo $fetch_query['student_ID'];?>">delete</a>
                                     </div>
                                 </div>
                                 
@@ -69,7 +65,7 @@ include '../connection.php';
                                 echo "<i> <b>Student Not found!</b> No data matches with your seach <b><< $search_field >></b></i>";
                             }
                         }
-                    $cur_year=date('Y');
+                        
                     ?>
                     <div class="li top color2">
 
@@ -90,14 +86,13 @@ include '../connection.php';
                                     <th>Names</th>
                                     <th>Sex</th>
                                     <th>Age</th>
-                                    <th class="no"></th>
                                 </thead>
                             </tr>
                             <?php 
                                 $n=1;
                                 while($fetch_second=mysqli_fetch_array($second)){
                             ?>
-                            <tr class="color padd medium">
+                            <tr class="color padd">
                                 <td><?php echo $n;?></td>
                                 <td><?php echo $fetch_second['FirstName']." ".$fetch_second['LastName'];?></td>
                                 <td>
@@ -105,10 +100,6 @@ include '../connection.php';
                                 </td>
                                 <td>
                                    <?php  echo intval($cur_year)-intval($fetch_second['year']); ?> 
-                                </td>
-                                <td class="no">
-                                    <a class="button small" href="edit-student-info.php?tid=<?php echo $fetch_second['student_ID'];?>">edit</a>
-                                    <a class="button small color3" href="delete-student-info.php?tid=<?php echo $fetch_second['student_ID'];?>">delete</a>
                                 </td>
                             </tr>
                             <?php

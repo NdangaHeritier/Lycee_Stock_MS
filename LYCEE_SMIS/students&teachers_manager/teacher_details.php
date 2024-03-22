@@ -83,7 +83,64 @@ include '../connection.php';
                                 echo "<i> <b>Teacher Not found!</b> No data matches with your seach <b><< $search_field >></b></i>";
                             }
                         }
+                    $cur_year=date('Y');
                     ?>
+                    <div class="li top color2">
+
+                        <div class="all w2">All Registered Teachers</div>
+                        <div class="btn">
+                            <button onclick="window.print()" class="print-btn no">print</button>
+                        </div>
+                    </div>
+                    <div class="li">
+                <?php 
+                    $second=mysqli_query($con,"select * from teachers");
+                    if (mysqli_num_rows($second)> 0) {
+                        ?>
+                        <table border='1'>
+                            <tr>
+                                <thead class="color2">
+                                    <th>No</th>
+                                    <th>Names</th>
+                                    <th>Email</th>
+                                    <th>Phone Number</th>
+                                    <th class="no"></th>
+                                </thead>
+                            </tr>
+                            <?php 
+                                $n=1;
+                                while($fetch_second=mysqli_fetch_array($second)){
+                            ?>
+                            <tr class="color padd medium">
+                                <td><?php echo $n;?></td>
+                                <td><?php echo $fetch_second['FullName'];?></td>
+                                <td>
+                                    <?php echo $fetch_second['Email'];?>
+                                </td>
+                                <td>
+                                   <?php
+                                        $user=$fetch_second['User_ID'];  
+                                        $sel=mysqli_query($con,"select * from users where U_ID='$user'");
+                                        $fsel=mysqli_fetch_array($sel);
+                                        echo $fsel['phone_number'];
+                                    ?> 
+                                </td>
+                                <td class="no">
+                                    <a class="button small" href="edit-teacher-info.php?tid=<?php echo $fetch_second['teacher_ID'];?>">edit</a>
+                                    <a class="button small color3" href="delete-teacher-info.php?tid=<?php echo $fetch_second['teacher_ID'];?>">delete</a>
+                                </td>
+                            </tr>
+                            <?php
+                            $n++;
+                                }
+                            ?>
+                        </table>
+                        <?php
+                    }else{
+                        echo "No data found!";
+                    }
+                ?>
+            </div>
                 </div>
             </div>
             </div>

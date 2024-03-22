@@ -26,6 +26,7 @@ if (isset($_SESSION['teacher'])) {
             </div>
             <?php
             	$select_lessons=mysqli_query($con,"select classes.*, lessons.* from classes, lessons where classes.class_ID=lessons.class_ID and lessons.teacher_ID='$myId'");
+            	if (mysqli_num_rows($select_lessons)>0) {
             	while($fetch_lessons=mysqli_fetch_array($select_lessons)){
             ?>
             	<div class="li">
@@ -43,6 +44,9 @@ if (isset($_SESSION['teacher'])) {
             	</div>
             </div>
             <?php
+            	}
+            }else{
+            		echo "no data found!";
             	}
             ?>
 	    </div>

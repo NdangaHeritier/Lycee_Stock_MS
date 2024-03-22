@@ -25,8 +25,40 @@
     padding: 1rem;
     margin-right: 2rem;
 }
-
-
+.color{
+    color: grey;
+}
+.color2{
+    color: rgb(100, 100, 100);
+}
+.color3{
+    color: rgb(237, 123, 70);
+}
+.mright{
+    margin-right: 4rem;
+    padding: 5px;
+}
+.mleft{
+    margin-left: 4rem;
+    padding: 5px;
+}
+.padd-left{
+    padding-left: 1rem;
+}
+.padd-right{
+    padding-right: 1rem;
+}
+.w2{
+    width: 200px;
+}
+.small{
+    font-size: 12px;
+}
+.cl{
+    padding-top: 10px;
+    padding-left: 6rem;
+    color: rgb(207, 103, 50);
+}
 .main{
     border: 0.5px solid silver;
     border-radius: 5px;
@@ -107,4 +139,25 @@
 }
 body{
     background-color: rgb(238, 236, 235);
+}
+.button{
+    color: rgb(237,123,70);
+    padding: 3px;
+    border: 0.5px solid silver;
+    border-radius: 5px 5px 0px 0px;
+    width: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+.button:hover{
+    background-color: silver;
+}
+.color{
+    color: grey;
+}
+.color2{
+    color: rgb(100, 100, 100);
+}
+.color3{
+    color: rgb(237, 123, 70);
 }

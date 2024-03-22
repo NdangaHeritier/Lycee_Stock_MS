@@ -48,7 +48,7 @@ if (isset($_SESSION['admin'])) {
                     </div>
                     <div class="a">
                         <img src="../images/link.png" width="20" height="15">
-                        <a href="student_details.php" target="mainframe">Track details</a>
+                        <a href="student_details.php" target="mainframe">Track Student details</a>
                     </div>
                     <div class="a">
                         <img src="../images/link.png" width="20" height="15">

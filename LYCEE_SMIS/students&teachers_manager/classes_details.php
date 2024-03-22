@@ -85,6 +85,62 @@ include '../connection.php';
                             }
                         }
                     ?>
+                    <div class="li top color2">
+
+                        <div class="all w2">All Registered Teachers</div>
+                        <div class="btn">
+                            <button onclick="window.print()" class="print-btn no">print</button>
+                        </div>
+                    </div>
+                    <div class="li">
+                <?php 
+                    $second=mysqli_query($con,"select classes.*,teachers.* from classes,teachers where teachers.teacher_ID=classes.ClassTeacher");
+                    if (mysqli_num_rows($second)> 0) {
+                        ?>
+                        <table border='1'>
+                            <tr>
+                                <thead class="color2">
+                                    <th>No</th>
+                                    <th>Names</th>
+                                    <th>Class Teacher</th>
+                                    <th>Lessons</th>
+                                    <th class="no"></th>
+                                </thead>
+                            </tr>
+                            <?php 
+                                $n=1;
+                                while($fetch_second=mysqli_fetch_array($second)){
+                            ?>
+                            <tr class="color padd medium">
+                                <td><?php echo $n;?></td>
+                                <td>Level <?php echo $fetch_second['ClassName'];?></td>
+                                <td>
+                                    <?php echo $fetch_second['FullName'];?>
+                                </td>
+                                <td>
+                                   <?php
+                                        $cla=$fetch_second['class_ID'];  
+                                        $sel=mysqli_query($con,"select count(*) as nn from lessons where class_ID='$cla'");
+                                        $fsel=mysqli_fetch_array($sel);
+                                        echo $fsel['nn'];
+                                    ?> 
+                                </td>
+                                <td class="no">
+                                    <a class="button small" href="edit-class-info.php?tid=<?php echo $fetch_second['class_ID'];?>">edit</a>
+                                    <a class="button small color3" href="delete-class-info.php?tid=<?php echo $fetch_second['class_ID'];?>">delete</a>
+                                </td>
+                            </tr>
+                            <?php
+                            $n++;
+                                }
+                            ?>
+                        </table>
+                        <?php
+                    }else{
+                        echo "No data found!";
+                    }
+                ?>
+            </div>
                 </div>
             </div>
             </div>

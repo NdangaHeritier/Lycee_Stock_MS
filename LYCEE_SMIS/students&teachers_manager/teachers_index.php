@@ -42,6 +42,10 @@ if (isset($_SESSION['teacher'])) {
                         <img src="../images/link.png" width="20" height="15">
                         <a href="my_lessons.php" target="mainframe">My Lessons</a>
                     </div>
+                    <div class="a">
+                        <img src="../images/link.png" width="20" height="15">
+                        <a href="find_student.php" target="mainframe">Find Student</a>
+                    </div>
                 </div>
             </div>
             <div class="right-pannel">

@@ -1,7 +1,7 @@
 <?php 
 session_start();
-if (isset($_SESSION['teacher'])) {
-    $lesson=$_GET['lessonId'];
+if (isset($_SESSION['admin'])) {
+    $lesson=$_GET['markId'];
 include "../connection.php";
     $first=mysqli_query($con,"select lessons.*,classes.* from lessons, classes where lessons.lesson_ID='$lesson' and classes.class_ID=lessons.class_ID");
     $fetch_first=mysqli_fetch_array($first);
@@ -101,7 +101,7 @@ include "../connection.php";
     </div>
     <div class="foot padd-left">
         <?php
-            $t=$_SESSION['teacher'];
+            $t=$_SESSION['admin'];
             $sel=mysqli_query($con,"select * from users where U_ID='$t'");
             $fett=mysqli_fetch_array($sel);
         ?>
