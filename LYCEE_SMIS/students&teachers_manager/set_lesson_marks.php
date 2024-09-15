@@ -5,8 +5,7 @@ if (isset($_SESSION['teacher']) || isset($_SESSION['admin'])) {
 	$get_id=$_GET['markId'];
 	$pre=floatval($get_id);
 	$st=floor($pre);
-	$less=$pre-$st;
-	$lesson=substr($less, 2);
+	$lesson=substr($get_id, strlen($st)+1);
 	echo "<a class='li color3 top button' href='set_lesson_marks.php?markId=$get_id'>refresh</a>";
 	$select_details=mysqli_query($con,"select * from students where student_ID='$st'");
 	$fetch_details=mysqli_fetch_array($select_details);
@@ -46,8 +45,9 @@ if (isset($_SESSION['teacher']) || isset($_SESSION['admin'])) {
             	if (isset($_POST['save'])) {
             		$cat=$_POST['cat'];
             		$exam=$_POST['exam'];
+            		$avg=($cat+$exam)/2;
             		if (is_numeric($cat) && is_numeric($exam)) {
-            			$up=mysqli_query($con,"insert into marks values('','$st','$lesson','$cat','$exam')");
+            			$up=mysqli_query($con,"insert into marks values('','$st','$lesson','$cat','$exam','$avg')");
             			if ($up==true) {
             				if (isset($_SESSION['teacher'])) {
             					header('location:set_marks_for_student.php');

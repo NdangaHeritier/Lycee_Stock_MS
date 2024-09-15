@@ -1,0 +1,8 @@
+// https://lycee-sims.000webhostapp.com/
+
+username: ndangahertier
+password: ndanga12.
+web password: ndanga12.
+datbase username: id21995362_ndanga
+database name: id21995362_lycee_smis
+database password: Nh-database-12.
